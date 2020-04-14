@@ -1,4 +1,14 @@
-#Personal portfolio
-Make it with CRA(Create-React-App) using Typescript.
+# Sergio Portfolio
 
-demo: http://sergio-dev.surge.sh
+Portfolio build with:
+  - Typescript
+  - ReactJs
+  - CRA (Create React App)
+  - React Srping
+  - Material UI
+  - Atomic Design
+  - I18n
+  
+##### Languages
+- Spanish
+- English
