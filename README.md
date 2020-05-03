@@ -1,6 +1,6 @@
-# Sergio Portfolio
+# Sergio's Portfolio
 
-Portfolio build with:
+##### Build with:
   - Typescript
   - ReactJs
   - CRA (Create React App)
