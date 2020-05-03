@@ -27,7 +27,7 @@ const ProjectPage: FunctionComponent = () => {
         <CardProjectMinimalist title={t('projects.swift.title')} repoLink={'https://github.com/sergio222-dev/swift-demo-react'} demoLink={'http://sergio222-react-demo.surge.sh/'} img={swift}>
           {t('projects.swift.description')}
         </CardProjectMinimalist>
-        <CardProjectMinimalist title={t('projects.portfolio.title')} repoLink={''} demoLink={''} img={img}>
+        <CardProjectMinimalist title={t('projects.portfolio.title')} repoLink={'https://github.com/sergio222-dev/my-portfolio'} demoLink={'http://sergio-dev.surge.sh'} img={img}>
           {t('projects.portfolio.description')}
         </CardProjectMinimalist>
       </ContentPage>

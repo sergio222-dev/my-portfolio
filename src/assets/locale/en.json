@@ -1,0 +1,34 @@
+{
+  "mainSection": {
+    "title": "Fullstack Developer",
+    "subTitle": "I code things and I like it"
+  },
+  "section1": {
+    "title": "Hi, I'm Sergio",
+    "subTitle": "I'm a web developer who make web site and web apps for all around the globe"
+  },
+  "section2": {
+    "title": "What can I do?",
+    "languages": "Languages",
+    "frontEndLang": "Javascript, HTML and CSS",
+    "backEndLang": "Javascript, PHP and Java",
+    "tools": "Tools"
+  },
+  "section3": {
+    "title": "What I already did",
+    "subTitle": "things that I actually did it"
+  },
+  "contact": {
+    "contact": "Do you want contact me?"
+  },
+  "projects": {
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Personal portfolio that I design and develop myself, it's made with React using typescript, it's responsive. I use atomic design to structure the project and I use libraries such as Materials for some components, Spring for animations and i18n for translations"
+    },
+    "swift": {
+      "title": "Swift",
+      "description": "Website made with React and Material, the design is not my own, I use libraries like spring for animations"
+    }
+  }
+}

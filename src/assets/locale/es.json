@@ -1,0 +1,34 @@
+ {
+   "mainSection": {
+     "title": "Fullstack Developer",
+     "subTitle": "Me gusta codear cosas"
+   },
+    "section1": {
+      "title": "Hola, soy Sergio",
+      "subTitle": "Soy un desarrollador web que hace web pages y web apps para todo el mundo"
+    },
+    "section2": {
+      "title": "¿Que puedo hacer?",
+      "languages": "Lenguajes",
+      "frontEndLang": "Javascript, HTML y CSS",
+      "backEndLang": "Javascript, PHP y Java",
+      "tools": "Herramientas"
+    },
+   "section3": {
+     "title": "Lo que ya hice",
+     "subTitle": "Cosas que ya he hecho"
+   },
+   "contact": {
+     "contact": "¿Quieres contactarme?"
+   },
+   "projects": {
+     "portfolio": {
+       "title": "Portfolio",
+       "description": "Portafolio personal que yo mismo diseñe y maquete, esta hecho con React usando typescript, es responsive, utilizo atomic design para estructurar el proyecto y uso librerías como Materials para algunos componentes, Spring para animaciones y i18n para traducciones"
+     },
+     "swift": {
+       "title": "Swift",
+       "description": "Pagina web hecha con React y Material, el diseño no es de mi autoría, uso librerías como spring para animaciones"
+     }
+   }
+ }
