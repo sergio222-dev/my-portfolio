@@ -54,8 +54,8 @@ const styles = makeStyles<Theme, StylesProps, classListType>(theme => {
       //transition: 'ease-in transform 350ms',
     },
     text: {
-
       width: '100%',
+      textOverflow: 'ellipsis',
     },
   };
 });

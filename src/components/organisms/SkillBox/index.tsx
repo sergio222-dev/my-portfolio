@@ -1,7 +1,6 @@
 import React from 'react';
 import createSlot, { useScope } from 'slottr';
-import TitleTypo from '../../molecules/Typography/TitleTypo';
-import Typography from '../../atoms/Typography';
+import TitleTypo from '../../atoms/Typography/TitleTypo';
 import List from '../../atoms/List';
 import Box from '../../atoms/Box';
 import {
@@ -13,8 +12,8 @@ import {
   StyledListItem,
 } from './styles';
 import { useTheme } from '@material-ui/core';
-import TextTypo from '../../molecules/Typography/TextTypo';
-import {useTranslation} from 'react-i18next';
+import TextTypo from '../../atoms/Typography/TextTypo';
+import { useTranslation } from 'react-i18next';
 
 export const IconSlot = createSlot(React.Fragment);
 export const TitleSlot = createSlot(React.Fragment);
@@ -29,7 +28,7 @@ const SkillBox: React.FC<SkillBoxStylesProps> = ({ children, variant }) => {
   const containerClasses = useContainerSkillBoxClasses({ variant });
   const theme = useTheme();
   const scope = useScope(children);
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className={containerClasses.root}>
       <HeaderSection>

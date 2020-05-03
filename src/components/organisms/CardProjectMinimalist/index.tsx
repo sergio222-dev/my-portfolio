@@ -1,12 +1,12 @@
 import React, { FunctionComponent, useState } from 'react';
 import { animated, useChain } from 'react-spring';
 import styles, { StylesProps } from './styles';
-import TextTypo from '../../molecules/Typography/TextTypo';
+import TextTypo from '../../atoms/Typography/TextTypo';
 import useMove from '../../animations/Move/moveSpring';
 import useFade from '../../animations/Fade/fadeSpring';
 import useMoveTrail from '../../animations/Move/moveTrail';
 import { Grid } from '@material-ui/core';
-import TitleTypo from '../../molecules/Typography/TitleTypo';
+import TitleTypo from '../../atoms/Typography/TitleTypo';
 import IconAvatar from '../../molecules/IconAvatar';
 import { GitHub, Web } from '@material-ui/icons';
 
@@ -31,9 +31,12 @@ const CardProjectMinimalist: FunctionComponent<Props> = ({ img, title, children,
   const [movePropsText, moveRef] = useMove({ animate, to: 0, direction: 'up', from: 1 });
   const [moveImg, moveImgRef] = useMove({ animate, to: -20, direction: 'left', from: 0 });
   const [fadeProps] = useFade({ from: 0, to: 1, animate });
-  const [trails] = useMoveTrail({ animate, from: 100, to: 0, num: 2 });
+  const [trails, trailsRef] = useMoveTrail({ animate, from: 200, to: 0, num: 2 });
 
-  useChain(animate ? [movePropsRef, moveRef, moveImgRef] : [movePropsRef, moveImgRef, movePropsRef], [0, 0.5, 0.5]);
+  useChain(
+    animate ? [movePropsRef, moveRef, moveImgRef, trailsRef] : [trailsRef, movePropsRef, moveImgRef, movePropsRef],
+    [0, 0.1],
+  );
   /*
   End Animations
    */
@@ -45,7 +48,7 @@ const CardProjectMinimalist: FunctionComponent<Props> = ({ img, title, children,
       onMouseLeave={(): void => set(false)}
     >
       <AnimationContainer style={moveImg} className={stylesClass.imageFigure}>
-        <img src={img} className={stylesClass.imageFigure} />
+        <img src={img} className={stylesClass.imageFigure} alt={''} />
       </AnimationContainer>
       <figcaption className={stylesClass.caption}>
         <AnimationContainer className={stylesClass.text} style={{ ...fadeProps, ...movePropsText }}>

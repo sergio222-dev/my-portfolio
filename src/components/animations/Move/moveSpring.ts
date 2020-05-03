@@ -1,7 +1,7 @@
 // import { AnimationHook, BasicParameters } from '../shared/index.legacy';
 // import useSpringConfigurator from '../shared/springInit';
-import { useSpring, SpringHandle, SpringValues } from 'react-spring';
-import { CSSProperties, RefObject, useRef } from 'react';
+import { useSpring, SpringHandle } from 'react-spring';
+import { RefObject, useRef } from 'react';
 import { AnimatedProps } from '@react-spring/web'
 
 type directionType = 'up' | 'down' | 'left' | 'right';

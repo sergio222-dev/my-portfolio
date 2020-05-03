@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import styles, { ContainerStylesProps } from './styles';
+import styles from './styles';
 import Atom from '../_interfaces';
 import clsx from 'classnames';
 

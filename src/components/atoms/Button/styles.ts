@@ -1,32 +1,27 @@
-import { lighten, withStyles, makeStyles, Theme, darken } from '@material-ui/core';
-import { Button as BaseButton } from '@material-ui/core';
+import { makeStyles, Theme, fade } from '@material-ui/core';
 
-export type ButtonsVariant = 'rounded' | 'square';
+export type ButtonsVariant = 'buttonBase';
 
-export const StyledButton = withStyles(theme => {
+const atomStyles = makeStyles<Theme, {}, ButtonsVariant>(theme => {
   return {
-    root: {
-      backgroundColor: `${theme.colors.yellow}`,
-      color: `${theme.colors.white}`,
-      padding: '5px 20px',
-      border: 'none',
-      '&:hover': {
-        //backgroundColor: lighten(theme.colors.yellow, 0.2),
-        background: darken(theme.colors.yellow, 0),
+    buttonBase: {
+      backgroundColor: 'transparent',
+      border: `${fade(theme.colors.white, 0.1)} solid 1px`,
+      // border: 'none',
+      borderRadius: '0.1em',
+      cursor: 'pointer',
+      padding: '0 2em',
+      '&:focus': {
+        outlineColor: 'transparent',
       },
-    },
-  };
-})(BaseButton);
-
-const useStyles = makeStyles<Theme, {}, ButtonsVariant>(theme => {
-  return {
-    rounded: {
-      borderRadius: `50px`,
-    },
-    square: {
-      borderRadius: '0',
+      '&:hover': {
+        backgroundColor: fade(theme.colors.gray, 0.2),
+      },
+      '&:active': {
+        backgroundColor: fade(theme.colors.gray, 0.5),
+      },
     },
   };
 });
 
-export default useStyles;
+export default atomStyles;

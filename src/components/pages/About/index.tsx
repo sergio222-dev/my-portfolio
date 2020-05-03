@@ -6,7 +6,7 @@ import AboutPageTemplate, {
   SubTitleAboutSlot,
 } from '../../templates/AboutPageTemplate';
 import Typography from '../../atoms/Typography';
-import TitleTypo from '../../molecules/Typography/TitleTypo';
+import TitleTypo from '../../atoms/Typography/TitleTypo';
 import DeveloperPhoto from '../../organisms/DeveloperPhoto';
 import { useTranslation } from 'react-i18next';
 

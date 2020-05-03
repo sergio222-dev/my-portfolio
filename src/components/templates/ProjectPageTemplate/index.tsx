@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 import SectionTemplate from '../SectionTemplate';
 import createSlot, { useScope } from 'slottr';
 import Box from '../../atoms/Box';
-import ProjectCardListTemplate from '../ProjectCardListTemplate';
 import styles from './styles';
 import { useTheme } from '@material-ui/core';
 

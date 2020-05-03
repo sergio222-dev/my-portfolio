@@ -2,8 +2,7 @@ import React, { FunctionComponent } from 'react';
 import SkillPageTemplate, { TitleTemplate, PapersSlot } from '../../templates/SkillPageTemplate/skillPageTemplate';
 import iconBack from '../../../assets/img/005.svg';
 import iconFront from '../../../assets/img/006.svg';
-import TitleTypo from '../../molecules/Typography/TitleTypo';
-import { useTheme } from '@material-ui/core';
+import TitleTypo from '../../atoms/Typography/TitleTypo';
 import Box from '../../atoms/Box';
 import SkillBox, { TitleSlot, ListTools, IconSlot, DescriptionSlot } from '../../organisms/SkillBox';
 import { TypeBadThings } from './styles';
@@ -24,7 +23,7 @@ const Index: FunctionComponent = () => {
       <PapersSlot>
         <SkillBox variant="left">
           <IconSlot>
-            <img color={'red'} src={iconFront} style={{ height: '4em' }} />
+            <img color={'red'} src={iconFront} style={{ height: '4em' }} alt={''} />
           </IconSlot>
           <TitleSlot>Frontend</TitleSlot>
           <DescriptionSlot>{t('section2.frontEndLang')}</DescriptionSlot>
@@ -40,7 +39,7 @@ const Index: FunctionComponent = () => {
         </SkillBox>
         <SkillBox variant="right">
           <IconSlot>
-            <img color={'red'} src={iconBack} style={{ height: '4em' }} />
+            <img color={'red'} src={iconBack} style={{ height: '4em' }} alt={''} />
           </IconSlot>
           <TitleSlot>Backend</TitleSlot>
           <DescriptionSlot>{t('section2.backEndLang')}</DescriptionSlot>

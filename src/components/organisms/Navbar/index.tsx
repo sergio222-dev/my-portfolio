@@ -1,4 +1,4 @@
-import React, { Dispatch } from 'react';
+import React from 'react';
 import styles from './styles';
 import { Grid } from '@material-ui/core';
 import createSlot, { useScope } from 'slottr';

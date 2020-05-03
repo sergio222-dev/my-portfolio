@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from 'react';
-import Typography from '../../atoms/Typography';
+import Typography from './index';
 import styles from './styles';
 
 const NavbarTypo: FunctionComponent = ({ children }) => {
-  const stylesClass = styles();
+  const stylesClass = styles({});
   return <Typography className={stylesClass.NavbarTypoRoot}>{children}</Typography>;
 };
 

@@ -1,26 +1,15 @@
-import React from 'react';
-import styles, { StyledButton, ButtonsVariant } from './styles';
+import React, { FunctionComponent, ButtonHTMLAttributes } from 'react';
 import clsx from 'classnames';
-import { ButtonProps as MaterialButtonProps } from '@material-ui/core';
-import Atom from '../_interfaces';
+import styles from './styles';
 
-interface ButtonProps extends Atom {
-  variants?: ButtonsVariant;
-}
+export type Props = ButtonHTMLAttributes<any>;
 
-const Button: React.FunctionComponent<MaterialButtonProps & ButtonProps> = ({
-  children,
-  variants = 'square',
-  classes,
-  className,
-  ...props
-}) => {
-  const stylesClass = styles({});
-  const rootClass = clsx(className, stylesClass[variants], classes ? classes.root : false);
+const Button: FunctionComponent<Props> = ({ children, className, ...buttonProps }) => {
+  const { buttonBase: buttonClass } = styles({});
   return (
-    <StyledButton classes={{ root: rootClass, ...classes }} {...props}>
+    <button {...buttonProps} className={clsx(buttonClass, className)}>
       {children}
-    </StyledButton>
+    </button>
   );
 };
 

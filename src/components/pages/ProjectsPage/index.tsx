@@ -4,7 +4,7 @@ import CardProjectMinimalist from '../../organisms/CardProjectMinimalist';
 import img from '../../../assets/img/007.png';
 import Separator from '../../atoms/Separator';
 import Typography from '../../atoms/Typography';
-import TitleTypo from '../../molecules/Typography/TitleTypo';
+import TitleTypo from '../../atoms/Typography/TitleTypo';
 import Box from '../../atoms/Box';
 import { useTranslation } from 'react-i18next';
 // images

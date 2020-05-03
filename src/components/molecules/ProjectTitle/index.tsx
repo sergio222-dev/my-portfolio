@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import TitleTypo from '../Typography/TitleTypo';
+import TitleTypo from '../../atoms/Typography/TitleTypo';
 import { Grid } from '@material-ui/core';
 import IconAvatar from '../IconAvatar';
 import { GitHub, Web } from '@material-ui/icons';

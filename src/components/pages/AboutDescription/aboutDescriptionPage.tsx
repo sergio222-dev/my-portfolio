@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import Section from '../../templates/SectionTemplate';
-import TitleTypo from '../../molecules/Typography/TitleTypo';
+import TitleTypo from '../../atoms/Typography/TitleTypo';
 import { useTheme } from '@material-ui/core';
 import Separator from '../../atoms/Separator';
 import Box from '../../atoms/Box';
-import TextTypo from '../../molecules/Typography/TextTypo';
+import TextTypo from '../../atoms/Typography/TextTypo';
 import { useTranslation } from 'react-i18next';
 
 const AboutDescriptionPage: FunctionComponent = () => {

@@ -4,7 +4,7 @@ import { FontWeightProperty, TextAlignProperty } from 'csstype';
 /**
  * class list
  */
-export type ClassnameList = 'root' | 'title';
+export type ClassnameList = 'root' | 'title' | 'NavbarTypoRoot';
 
 export interface StyleProps {
   fontSize?: string;
@@ -29,6 +29,10 @@ const useStyles = makeStyles<Theme, StyleProps, ClassnameList>(theme => {
     },
     title: {
       textTransform: 'uppercase',
+    },
+    NavbarTypoRoot: {
+      padding: 0,
+      // margin: 0,
     },
   };
 });

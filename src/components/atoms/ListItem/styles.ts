@@ -1,5 +1,5 @@
 import { makeStyles, withStyles } from '@material-ui/core';
-import { Button as BaseButton, ButtonClassKey } from '@material-ui/core';
+import { Button as BaseButton } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => {
   return {

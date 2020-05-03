@@ -1,5 +1,5 @@
-import { useSpring, useTrail, SpringHandle } from 'react-spring';
-import { CSSProperties, HTMLAttributes, RefObject, useRef } from 'react';
+import { useTrail } from 'react-spring';
+import { RefObject, useRef } from 'react';
 import { AnimatedProps } from '@react-spring/web';
 
 interface Props {
@@ -11,15 +11,19 @@ interface Props {
 
 const useMoveTrail = ({ animate, from, to, num }: Props): [AnimatedProps<{}>[], RefObject<any>] => {
   const ref = useRef(null);
-  const trails = useTrail<{ t: number }>(num, {
-    t: animate ? to : from,
-    ref,
-  });
+  const trails = useTrail<{ t: number }>(
+    num,
+    {
+      t: animate ? to : from,
+      ref,
+    },
+    [animate],
+  );
 
   return [
     trails.map(({ t }) => {
       return {
-        transform: t.to<string>((v: number) => `translate(0, ${v}px)`),
+        transform: t.to<string>((v: number) => `translate(0, ${v}%)`),
       };
     }),
     ref,

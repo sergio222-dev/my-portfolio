@@ -3,7 +3,7 @@ import React from 'react';
 import img from '../../../assets/img/007.png';
 
 export default {
-  title: 'O - Card Project - Minimalist',
+  title: 'Card Project Minimalist',
   component: CardProject,
 };
 

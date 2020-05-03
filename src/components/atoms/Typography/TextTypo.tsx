@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import Typography from '../../atoms/Typography';
+import Typography from './index';
 import { useTheme } from '@material-ui/core';
 
 const TextTypo: FunctionComponent = ({ children }) => {

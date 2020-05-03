@@ -9,7 +9,7 @@ const Avatar: React.FunctionComponent<React.ImgHTMLAttributes<HTMLImageElement>>
 }) => {
   const stylesClass = styles();
   const rootClass = clsx(stylesClass.root, className);
-  return <img className={rootClass} {...props} />;
+  return <img className={rootClass} alt={props.alt} {...props} />;
 };
 
 export default Avatar;
