@@ -2,7 +2,7 @@
 
 ##### Build with:
   - Typescript
-  - ReactJs
+  - React
   - CRA (Create React App)
   - React Srping
   - Material UI
